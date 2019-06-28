@@ -6,12 +6,7 @@ class ZenzivaLib {
 	private $url;
 	private $ci;
 	
-	function __construct(){
-		$this->ci =& get_instance();
-		$this->user_key = $this->ci->config->item('user_key', 'sms');
-		$this->pass_key = $this->ci->config->item('pass_key', 'sms');
-		$this->url = $this->ci->config->item('url', 'sms');
-	}
+	
 	
 	function send_sms($telepon, $message){
 		// $userkey = "xxxxxx";
